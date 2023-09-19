@@ -83370,15 +83370,14 @@ $S:38}
 A.ze.prototype={
 ai(){return new A.Tx(B.j)}}
 A.Tx.prototype={
-aK(){$.am.bt$.push(this)
+aK(){this.b1()
+$.am.bt$.push(this)
 $.bM.toString
 var s=$.b_().a.d
 this.d=s
-$.k4.b=s===B.R
-this.b1()},
-xZ(){var s=this
-if(s.c!=null)s.ar(new A.ak1(s))
-s.YY()},
+$.k4.b=s===B.R},
+xZ(){this.YY()
+this.ar(new A.ak1(this))},
 m(){$.apX().bJ(0)
 B.b.C($.am.bt$,this)
 this.aN()},
