@@ -13531,7 +13531,7 @@ _.d=d
 _.e=e
 _.f=f},
 UD:function UD(){},
-NC(a,b,c,d){return new A.fd(a,b,c,d,null)},
+NC(a,b,c){return new A.fd(a,b,c,null)},
 NF(a){var s=a.tA(t.Np)
 if(s!=null)return s
 throw A.c(A.y5(A.a([A.or("Scaffold.of() called with a context that does not contain a Scaffold."),A.bD("No Scaffold ancestor could be found starting from the context that was passed to Scaffold.of(). This usually happens when the context provided is from the same StatefulWidget as that whose build function actually creates the Scaffold widget being sought."),A.a2Y('There are several ways to avoid this problem. The simplest is to use a Builder to get a context that is "under" the Scaffold. For an example of this, please see the documentation for Scaffold.of():\n  https://api.flutter.dev/flutter/material/Scaffold/of.html'),A.a2Y("A more efficient solution is to split your build function into several widgets. This introduces a new context from which you can obtain the Scaffold. In this solution, you would have an outer widget that creates the Scaffold populated by instances of your new inner widgets, and then in these inner widgets you would use Scaffold.of().\nA less elegant but more expedient solution is assign a GlobalKey to the Scaffold, then use the key.currentState property to obtain the ScaffoldState rather than using the Scaffold.of() function."),a.afd("The context used was")],t.E)))},
@@ -13619,12 +13619,11 @@ _.b=c
 _.c=null},
 ahT:function ahT(a,b){this.a=a
 this.b=b},
-fd:function fd(a,b,c,d,e){var _=this
+fd:function fd(a,b,c,d){var _=this
 _.e=a
 _.f=b
 _.r=c
-_.cy=d
-_.a=e},
+_.a=d},
 tU:function tU(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p){var _=this
 _.d=a
 _.e=b
@@ -53001,8 +53000,8 @@ a6n(){var s,r=this.c
 r.toString
 s=A.zS(r)
 if(s!=null&&s.d.length!==0)s.hn(0,B.CB,B.fc)},
-gon(){var s=this.a.cy
-return s!==!1},
+gon(){this.a.toString
+return!0},
 aK(){var s,r=this,q=null
 r.b1()
 s=r.c
@@ -53055,68 +53054,76 @@ qL(a,b,c,d,e,f,g){return this.B3(a,b,c,!1,!1,d,e,f,g)},
 Jk(a,b,c,d,e,f,g,h){return this.B3(a,b,c,d,!1,e,f,g,h)},
 JF(a,b){this.a.toString},
 JE(a,b){this.a.toString},
-G(a){var s,r,q,p,o,n,m,l,k,j=this,i=null,h={},g=A.G(a),f=a.ap(t.I)
-f.toString
-s=f.w
+G(a){var s,r,q,p,o,n,m,l,k,j,i=this,h=null,g={},f=A.G(a),e=a.ap(t.I)
+e.toString
+s=e.w
 r=A.a([],t.sa)
-f=j.a
-q=f.f
-f=f.e
-j.a0d(r,new A.Qs(new A.t4(q,j.f),!1,!1,i),B.hH,j.gon(),!1,!1,!1,f!=null)
-if(j.dy)j.qL(r,A.a7d(!0,i,j.fr,!1,i,i,i),B.hK,!0,!0,!0,!0)
-if(j.a.e!=null){f=A.bA(a,B.bl,t.w).w
-f=j.r=A.aEP(a,j.a.e.fx)+f.f.b
-q=j.a.e
+e=i.a
+q=e.f
+e=e.e
+i.gon()
+i.a0d(r,new A.Qs(new A.t4(q,i.f),!1,!1,h),B.hH,!0,!1,!1,!1,e!=null)
+if(i.dy)i.qL(r,A.a7d(!0,h,i.fr,!1,h,h,h),B.hK,!0,!0,!0,!0)
+if(i.a.e!=null){e=A.bA(a,B.bl,t.w).w
+e=i.r=A.aEP(a,i.a.e.fx)+e.f.b
+q=i.a.e
 q.toString
-j.qL(r,new A.ew(new A.as(0,1/0,0,f),new A.y2(1,f,f,f,i,q,i),i),B.hI,!0,!1,!1,!1)}h.a=!1
-h.b=null
-if(j.at!=null||j.as.length!==0){f=A.ay(j.as,!0,t.l7)
-q=j.at
-if(q!=null)f.push(q.a)
-j.qL(r,A.uh(B.hT,f,B.ah,B.dn),B.hL,j.gon(),!1,!1,!0)}f=j.z
-if(f!=null){f.a.gami()
-h.a=!1
-f=j.z
-if(f!=null){f=f.a
-f.gdj(f)}h.b=g.hx.w
-f=j.z
-f=f==null?i:f.a
-j.a.toString
-j.Jk(r,f,B.dv,!j.gon(),!1,!1,!1,!0)}h.c=!1
-if(j.Q!=null){a.ap(t.iB)
-f=A.G(a)
-p=f.ry.f
-h.c=(p==null?0:p)!==0
-f=j.Q
-f=f==null?i:f.a
-q=j.a.e
-j.Jk(r,f,B.hM,!j.gon(),!0,!1,!1,q!=null)}f=j.a
-f.toString
-q=j.ch
+i.qL(r,new A.ew(new A.as(0,1/0,0,e),new A.y2(1,e,e,e,h,q,h),h),B.hI,!0,!1,!1,!1)}g.a=!1
+g.b=null
+if(i.at!=null||i.as.length!==0){e=A.ay(i.as,!0,t.l7)
+q=i.at
+if(q!=null)e.push(q.a)
+p=A.uh(B.hT,e,B.ah,B.dn)
+i.gon()
+i.qL(r,p,B.hL,!0,!1,!1,!0)}e=i.z
+if(e!=null){e.a.gami()
+g.a=!1
+e=i.z
+if(e!=null){e=e.a
+e.gdj(e)}g.b=f.hx.w
+e=i.z
+e=e==null?h:e.a
+i.a.toString
+i.gon()
+i.Jk(r,e,B.dv,!1,!1,!1,!1,!0)}g.c=!1
+if(i.Q!=null){a.ap(t.iB)
+e=A.G(a)
+o=e.ry.f
+g.c=(o==null?0:o)!==0
+e=i.Q
+e=e==null?h:e.a
+q=i.a.e
+i.gon()
+i.Jk(r,e,B.hM,!1,!0,!1,!1,q!=null)}e=i.a
+e.toString
+q=i.ch
 q===$&&A.b()
-o=j.CW
-o===$&&A.b()
-n=j.dx
+n=i.CW
 n===$&&A.b()
-m=j.db
+m=i.dx
 m===$&&A.b()
-j.qL(r,new A.D8(f.r,q,o,n,m,i),B.hN,!0,!0,!0,!0)
-switch(g.r.a){case 2:case 4:j.qL(r,A.ej(B.aI,i,B.a1,!0,i,i,i,i,i,i,i,i,i,i,i,i,i,i,i,j.ga6m(),i,i,i,i,i,i),B.hJ,!0,!1,!1,!0)
+l=i.db
+l===$&&A.b()
+i.qL(r,new A.D8(e.r,q,n,m,l,h),B.hN,!0,!0,!0,!0)
+switch(f.r.a){case 2:case 4:i.qL(r,A.ej(B.aI,h,B.a1,!0,h,h,h,h,h,h,h,h,h,h,h,h,h,h,h,i.ga6m(),h,h,h,h,h,h),B.hJ,!0,!1,!1,!0)
 break
-case 0:case 1:case 3:case 5:break}f=j.x
-q=f.y
-if(q==null?A.l(f).h("ch.T").a(q):q){j.JE(r,s)
-j.JF(r,s)}else{j.JF(r,s)
-j.JE(r,s)}f=t.w
-q=A.bA(a,B.bl,f).w
-o=j.gon()?A.bA(a,B.hG,f).w.e.d:0
-l=q.f.xJ(o)
-o=A.bA(a,B.TK,f).w
-f=j.gon()&&A.bA(a,B.hG,f).w.e.d!==0?0:i
-k=o.r.xJ(f)
-if(l.d<=0)j.a.toString
-j.a.toString
-return new A.Vh(!1,new A.AC(A.mt(B.V,!0,i,A.j1(j.ch,new A.abk(h,j,!1,l,k,s,r),i),B.p,g.go,0,i,i,i,i,i,B.eb),i),i)}}
+case 0:case 1:case 3:case 5:break}e=i.x
+q=e.y
+if(q==null?A.l(e).h("ch.T").a(q):q){i.JE(r,s)
+i.JF(r,s)}else{i.JF(r,s)
+i.JE(r,s)}e=t.w
+q=A.bA(a,B.bl,e).w
+i.gon()
+n=A.bA(a,B.hG,e).w
+k=q.f.xJ(n.e.d)
+q=A.bA(a,B.TK,e).w
+i.gon()
+e=A.bA(a,B.hG,e).w
+e=e.e.d!==0?0:h
+j=q.r.xJ(e)
+if(k.d<=0)i.a.toString
+i.a.toString
+return new A.Vh(!1,new A.AC(A.mt(B.V,!0,h,A.j1(i.ch,new A.abk(g,i,!1,k,j,s,r),h),B.p,f.go,0,h,h,h,h,h,B.eb),h),h)}}
 A.abj.prototype={
 $0(){this.a.z=this.b},
 $S:0}
@@ -83515,7 +83522,7 @@ p=A.a([A.aBs(a,n,o===p)],h)
 for(n=J.ah(r.b[o]);n.u();)p.push(A.aBs(a,A.i(n.gD(n)),o===r.b.length-1))
 p.push(o<r.b.length-1&&r.e?new A.ur(k,new A.bP(B.iH,A.eI(A.a([new A.dl(35,35,A.KB(k,new A.ic(B.n_,23,B.ea,k,k),new A.a3T(j,a,o),B.aT,k,k),k),B.k9,new A.dl(35,35,A.KB(k,new A.ic(B.j3,23,B.IW,k,k),new A.a3U(j,a,o),B.aT,k,k),k)],h),B.I,B.z,B.B,k),k),k):A.d4(k,k,B.p,k,k,k,k,k,k,k,k,k,k))
 q.push(new A.iF(k,p))}h=A.tT(!0,A.mQ(A.l5(A.ct(A.a([A.aKc(new A.OU(m,m,m,m,m,m,B.am),q,s),B.c3],h),B.I,B.z,B.B),j.Q),k),!0)
-return A.NC(i,h,j.ax||j.ay?A.ar1(B.Ep,!1,new A.a3V(j,a),B.dz):k,k)},
+return A.NC(i,h,j.ax||j.ay?A.ar1(B.Ep,!1,new A.a3V(j,a),B.dz):k)},
 $S:482}
 A.a3R.prototype={
 $0(){return this.a.ad_(this.b)},
@@ -83552,7 +83559,7 @@ $2(a,b){},
 $S:484}
 A.a50.prototype={
 $2(a,b){var s=null,r=A.Hs(a,t.c9)
-return A.NC(A.ap_(a,s,!0,s),new A.xf(J.lP($.d3.ae()),new A.a4Z(r),new A.a5_(),s),s,s)},
+return A.NC(A.ap_(a,s,!0,s),new A.xf(J.lP($.d3.ae()),new A.a4Z(r),new A.a5_(),s),s)},
 $S:485}
 A.a4Z.prototype={
 $1(a){return A.tT(!0,A.mQ(A.l5(A.ct(A.a([A.awg(new A.a4X(this.a),J.bv($.d3.ae()),B.tE,new A.a4Y(),!0),B.c3],t.p),B.I,B.z,B.B),null),null),!0)},
@@ -83598,7 +83605,7 @@ A.a5b.prototype={
 $2(a,b){},
 $S:490}
 A.a5a.prototype={
-$2(a,b){return A.NC(null,A.tT(!0,new A.zx(new A.a59(A.Hs(a,t.H9)),null),!0),null,!1)},
+$2(a,b){return A.NC(null,A.tT(!0,new A.zx(new A.a59(A.Hs(a,t.H9)),null),!0),null)},
 $S:491}
 A.a59.prototype={
 $2(a,b){var s=null,r="Start Game",q="Choose your players to start the game.",p="App Settings",o="Score Calculation settings & Game Mode.",n=this.a,m=t.p
@@ -83634,7 +83641,7 @@ $2(a,b){},
 $S:494}
 A.a8G.prototype={
 $2(a,b){var s=A.Hs(a,t.CH)
-return A.NC(A.ap_(a,A.a([A.at4(a,B.Ef,!0,new A.a8B(s,a),25),A.at4(a,B.mZ,!0,new A.a8C(s,a),30)],t.p),!0,null),new A.xf(s.y.length!==0,new A.a8D(s),new A.a8E(),null),A.ar1(B.Et,!1,new A.a8F(s,a),B.dz),null)},
+return A.NC(A.ap_(a,A.a([A.at4(a,B.Ef,!0,new A.a8B(s,a),25),A.at4(a,B.mZ,!0,new A.a8C(s,a),30)],t.p),!0,null),new A.xf(s.y.length!==0,new A.a8D(s),new A.a8E(),null),A.ar1(B.Et,!1,new A.a8F(s,a),B.dz))},
 $S:495}
 A.a8B.prototype={
 $0(){return A.tR(this.b,B.E2)},
@@ -83693,7 +83700,7 @@ $2(a,b){},
 $S:497}
 A.acr.prototype={
 $2(a,b){var s=null,r=A.Hs(a,t.J7),q=A.ap_(a,s,!0,s),p=A.atw(a,!1),o=A.wd(20),n=r.Q,m=t.p
-return A.NC(q,A.tT(!0,A.mQ(A.l5(new A.bP(B.mv,A.ct(A.a([A.atv(s,A.a([p,o,B.cp,A.c4("Skrew - Score Sheet "+(n===$?r.Q="":n),s,s,s,B.kj,s,s),B.cp],m)),B.c3,A.atv("Chat with the developer",A.a([A.GG(a,B.Ed,B.f3,s,s,s,s,new A.acl(r),s,"Facebook"),A.wd(55),A.GG(a,B.Em,B.lQ,s,s,s,s,new A.acm(r),s,"Telegram")],m)),B.c3,A.atv("Win / Lose",A.a([A.GG(a,s,s,s,s,s,new A.acn(r),s,$.nD.ae(),"Win by Round"),A.wd(20),A.GG(a,s,s,r.x,2,new A.aco(r),s,s,s,"Win Round"),A.wd(20),A.GG(a,s,s,s,s,s,new A.acp(r),s,$.nB.ae(),"Lose by Score"),A.wd(20),A.GG(a,s,s,r.y,4,new A.acq(r),s,s,s,"Lose Score")],m))],m),B.bT,B.z,B.B),s),s),s),!0),s,s)},
+return A.NC(q,A.tT(!0,A.mQ(A.l5(new A.bP(B.mv,A.ct(A.a([A.atv(s,A.a([p,o,B.cp,A.c4("Skrew - Score Sheet "+(n===$?r.Q="":n),s,s,s,B.kj,s,s),B.cp],m)),B.c3,A.atv("Chat with the developer",A.a([A.GG(a,B.Ed,B.f3,s,s,s,s,new A.acl(r),s,"Facebook"),A.wd(55),A.GG(a,B.Em,B.lQ,s,s,s,s,new A.acm(r),s,"Telegram")],m)),B.c3,A.atv("Win / Lose",A.a([A.GG(a,s,s,s,s,s,new A.acn(r),s,$.nD.ae(),"Win by Round"),A.wd(20),A.GG(a,s,s,r.x,2,new A.aco(r),s,s,s,"Win Round"),A.wd(20),A.GG(a,s,s,s,s,s,new A.acp(r),s,$.nB.ae(),"Lose by Score"),A.wd(20),A.GG(a,s,s,r.y,4,new A.acq(r),s,s,s,"Lose Score")],m))],m),B.bT,B.z,B.B),s),s),s),!0),s)},
 $S:498}
 A.acl.prototype={
 $0(){return this.a.ajW()},
