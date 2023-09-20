@@ -84222,11 +84222,11 @@ this.iV(new A.oc())
 A.em(a,!1).hJ(null)
 q=this.x
 p=q.d
-if(p.length!==0){o=B.b.gc0(p).Q
+o=B.b.gc0(p).Q
 o.toString
 if(o>0){p=B.b.gc0(p).Q
 p.toString
-q.ho(p+60,B.cg,B.bY)}}}else A.Z8(a,"Player name already exists!")}},
+q.ho(p+60,B.cg,B.bY)}}else A.Z8(a,"Player name already exists!")}},
 alR(a,b,c){var s,r,q,p,o,n,m,l,k,j
 if(c.length!==0){s=J.ZB(J.b6($.nF.ab(),b))
 if(s!==c){r=J.nY($.nF.ab(),new A.a8O(c))
@@ -84274,7 +84274,6 @@ p=A.a([],t.tq)
 for(s=q.length,o=0;o<q.length;q.length===s||(0,A.I)(q),++o)p.push(q[o].a)
 A.l4(a,new A.yo(new A.yn(p,A.a([],t.Zb),"","",!1),!0,0,null))}else A.Z8(a,"Must select from 3 to 8 player!")},
 Ag(){var s=this.y
-if(s.length===0)return 0
 return new A.ae(s,new A.a8K(),A.a4(s).h("ae<1,o>")).uz(0,new A.a8L())}}
 A.a8H.prototype={
 $1(a){var s=this,r=s.a,q=s.b
@@ -84360,14 +84359,13 @@ o.push(l)}B.b.G(s.b,o)
 k.Q_()
 k.iV(new A.r9())
 A.em(a,!1).hJ(null)
-j=k.Q
-s=j.d
-if(s.length!==0){if(c){r=B.b.gc0(s).Q
-r.toString
-r=r>0}else r=!1
-if(r){s=B.b.gc0(s).Q
+if(c){j=B.b.gc0(k.Q.d).Q
+j.toString
+j=j>0}else j=!1
+if(j){j=k.Q
+s=B.b.gc0(j.d).Q
 s.toString
-j.ho(s+60,B.cg,B.bY)}}}},
+j.ho(s+60,B.cg,B.bY)}}},
 Q_(){var s,r=this
 if(!r.ax){s=r.ay=!1
 if($.nG.ab()?$.nE.ab():s){s=r.x
