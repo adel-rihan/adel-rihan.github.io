@@ -83934,7 +83934,7 @@ $2(a,b){var s,r,q,p=null,o=A.wW(a,t.YE).y,n=o.length,m=A.Zc(a,p,!1,p),l=B.cH.i(0
 l.toString
 l=A.ayy(l,B.C,1)
 s=t.p
-r=A.a([new A.hn(new A.dI(A.G(a).ax.b,p,p,p,p,p,B.aY),A.a([A.Za(a,"Rank"),A.Za(a,"Player Name"),A.Za(a,"Score"),A.Za(a,"Win\nRounds")],s))],t.nk)
+r=A.a([new A.hn(new A.dI(A.G(a).ax.b,p,p,p,p,p,B.aY),A.a([A.Za(a,"Rank"),A.Za(a,"Player Name"),A.Za(a,"Score"),A.Za(a,"Won")],s))],t.nk)
 for(q=0;q<o.length;++q)r.push(new A.hn(p,A.a([A.aqf(a,q,!1,A.aPJ(q,n),n),A.aqf(a,q,!1,o[q].a,n),A.aqf(a,q,!0,B.e.k(o[q].b),n),A.aqf(a,q,!0,B.e.k(o[q].c),n)],s)))
 return A.AJ(m,A.pM(!0,A.l8(A.jK(A.ck(A.a([A.ayx(l,r,B.IT),B.bI],s),B.H,B.z,B.B),p),p),!0),p)},
 $S:499}
