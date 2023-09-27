@@ -84274,7 +84274,7 @@ q=A.ay(new A.b4(s,new A.a8M(),r),!0,r.h("k.E"))
 B.b.ed(q,new A.a8N())
 p=A.a([],t.tq)
 for(s=q.length,o=0;o<q.length;q.length===s||(0,A.I)(q),++o)p.push(q[o].a)
-A.l4(a,new A.yo(new A.yn(p,A.a([],t.Zb),"","",!1),!0,0,null))}else A.Z8(a,"Must select from 3 to 8 player!")},
+A.l4(a,new A.yo(new A.yn(p,A.a([],t.Zb),"","",!0),!0,0,null))}else A.Z8(a,"Must select from 3 to 8 player!")},
 Ag(){var s=this.y
 if(s.length===0)return 0
 return new A.ae(s,new A.a8K(),A.a4(s).h("ae<1,o>")).uz(0,new A.a8L())}}
