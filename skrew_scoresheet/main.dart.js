@@ -92348,7 +92348,7 @@ A.abC.prototype={
 $0(){var s=this.a,r=$.dG.ac().x
 r===$&&A.a()
 if(r.b.length>1)A.mf(s,new A.Dy(r,null))
-else A.pk(s,"You have no rounds to show!")
+else A.pk(s,"You have no rounds to view results!")
 return null},
 $S:0}
 A.abD.prototype={
@@ -92756,7 +92756,8 @@ $1(a){var s,r,q,p=this.a,o=p.x
 o===$&&A.a()
 s=p.as
 r=this.b
-q=r?o.b.length:p.Q.z+1
+if(r){q=o.b.length
+if(q===0)q=1}else q=p.Q.z+1
 return A.b4m(a,new A.abt(p,a,r),s,q,r,o.a)},
 $S:6}
 A.abt.prototype={
